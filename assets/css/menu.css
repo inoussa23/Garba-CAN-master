@@ -1,0 +1,157 @@
+/* MENU DE NAVIGATION  RESPONSIVE*/
+header {
+    position: relative;
+}
+
+nav label {
+    display: none;
+}
+
+nav label i {
+    color: white;
+    font-size: 30px;
+}
+
+nav input[type="checkbox"] {
+    display: none;
+}
+
+
+/* FIN MENU DE NAVIGATION  RESPONSIVE*/
+
+
+
+/* MENU DE NAVIGATION  RESPONSIVE*/
+
+@media screen and (max-width : 800px) {
+    section.container {
+        width: 90%;
+    }
+
+    div#cards div.card {
+        width: 47%;
+    }
+
+
+    div#cards {
+        column-gap: 0px;
+    }
+
+    /* NAVBAR */
+    nav label {
+        display: block;
+    }
+
+    nav ul.mobile-menu li {
+        display: block;
+        padding: 20px 10px;
+    }
+
+    nav ul.mobile-menu {
+        position: absolute;
+        top: 100%;
+        right: -120%;
+        background-color: #825400;
+        transition: 0.9s;
+        flex-direction: column;
+        width: 100%;
+
+        /* align-items: center; */
+    }
+
+
+    nav input[type="checkbox"]:checked+ul {
+        display: flex;
+        transition: 0.9s;
+        right: 0;
+    }
+
+
+
+    /* bannierre */
+    div#bannierre h5 {
+        font-size: 18px;
+    }
+
+    div#bannierre h1 {
+        font-size: 30px;
+    }
+
+    div#bannierre a {
+        padding: 5px 20px;
+        font-size: 15px;
+    }
+
+
+    /* liens menu nav hover */
+
+    nav ul li a:hover {
+        border: none;
+        color: orange;
+    }
+
+    nav ul li a.active {
+        border: none;
+        color: orange;
+    }
+
+
+}
+
+
+@media screen and (max-width : 630px) {
+
+
+
+
+
+    /* a propos */
+    .image-container img {
+        display: none;
+    }
+
+    /*  MON MENU */
+
+    section.container {
+        width: 90%;
+        margin: auto;
+        padding: 100px 0px;
+    }
+
+    div#recette {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    div#recette h2 {
+        font-size: 30px;
+        font-weight: lighter;
+    }
+
+    div#recette a {
+        color: rgba(160, 106, 7, 0.895);
+    }
+
+
+    /* MES CARTES */
+    div#cards {
+        flex-direction: column;
+    }
+
+    div#cards div.card {
+        width: 100%;
+    }
+
+    /* A propos */
+
+    .apropos .apropos-container {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    .apropos-container div {
+        width: 100%;
+    }
+
+
+}
